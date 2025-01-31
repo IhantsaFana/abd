@@ -1,10 +1,9 @@
-import About from "./Components/About";
-import Counts from "./Components/Counts";
-import Courses from "./Components/Courses";
-import Features from "./Components/Features";
-import Hero from "./Components/Hero";
-import Trainers from "./Components/Trainers";
-import WhyUs from "./Components/WhyUs";
+import About from "./components/About";
+import Counts from "./components/Counts";
+import Courses from "./components/Courses";
+import Features from "./components/Features";
+import Hero from "./components/Hero";
+import WhyUs from "./components/WhyUs";
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <WhyUs />
       <Features />
       <Courses />
-      <Trainers />
     </main>
   )
 }

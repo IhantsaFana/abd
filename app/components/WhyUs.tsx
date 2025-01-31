@@ -6,31 +6,11 @@ import Card from "../hooks/card";
 export default function WhyUs() {
   return (
     <section className="relative py-16 text-white overflow-hidden">
-      {/* Centered animated background */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        {Array.from({ length: 4 }).map((_, index) => (
-          <motion.div
-            key={index}
-            className="w-32 h-32 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 opacity-30 cube"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{
-              duration: 10,
-              repeat: Infinity,
-              repeatType: "reverse",
-              delay: index * 2,
-            }}
-            whileHover={{ rotate: Math.random() * 90 - 45, scale: 1.1 }}
-          />
-        ))}
-      </div>
-
-      {/* Blur effect between cubes and content */}
-      <div className="absolute inset-0 bg-white opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 opacity-30"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 rounded-lg shadow-xl transform transition-all hover:scale-105">
+          <div className="text-white p-8 rounded-lg shadow-xl transform transition-all hover:scale-105">
             <h3 className="text-3xl font-bold mb-4">Pourquoi Choisir Abidi.org pour l&apos;apprentissage ?</h3>
             <p className="mb-6">
               Chez Abidi.org, nous offrons une expérience d&apos;apprentissage unique pour les étudiants des zones rurales, en rendant l&apos;éducation accessible par

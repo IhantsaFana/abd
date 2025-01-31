@@ -33,20 +33,17 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 bg-white shadow-md z-50 text-gray-600">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <header className="sticky top-0 bg-white shadow-md z-50 text-gray-600 px-4 py-2 md:px-8 md:py-4">
+      <div className="container mx-auto flex items-center justify-between">
         {/* Logo avec image */}
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/img/logo.png"
+            src="/img/logo.svg"
             alt="abd.org logo"
             width={40}
             height={40}
             className="rounded-full"
           />
-          <span className="text-xl font-bold text-gray-800 hidden md:block">
-            abd.org
-          </span>
         </Link>
 
         {/* Menu principal desktop */}
@@ -59,55 +56,41 @@ export default function Header() {
           >
             Accueil
           </Link>
-
-          {/* Dropdown Cours */}
-          <div
-            className="relative"
-            onMouseEnter={() => setCoursesDropdownOpen(true)}
-            onMouseLeave={() => setCoursesDropdownOpen(false)}
-          >
-            <button className="hover:text-gray-800 flex items-center">
-              Cours
-              <svg
-                className="w-4 h-4 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            
-            {isCoursesDropdownOpen && (
-              <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 w-48">
-                <Link
-                  href="/courses/bac"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Préparation BAC
-                </Link>
-                <Link
-                  href="/courses/langues"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Cours de langues
-                </Link>
-              </div>
-            )}
-          </div>
-
           <Link
-            href="/events"
-            className={`hover:text-gray-800 ${
-              pathname === "/events" ? "font-bold border-b-2 border-blue-500" : ""
+            href="/courses"
+            className={`hover:text-gray-800 transition ${
+              pathname === "/cours" ? "font-bold border-b-2 border-blue-500" : ""
             }`}
           >
-            Événements
+            Cours
+          </Link>
+          <Link
+            href="/caracteristiques"
+            className={`hover:text-gray-800 transition ${
+              pathname === "/caracteristiques"
+                ? "font-bold border-b-2 border-blue-500"
+                : ""
+            }`}
+          >
+            Caractéristiques
+          </Link>
+          <Link
+            href="/fonctionnement"
+            className={`hover:text-gray-800 transition ${
+              pathname === "/fonctionnement"
+                ? "font-bold border-b-2 border-blue-500"
+                : ""
+            }`}
+          >
+            Fonctionnement
+          </Link>
+          <Link
+            href="/impact"
+            className={`hover:text-gray-800 transition ${
+              pathname === "/impact" ? "font-bold border-b-2 border-blue-500" : ""
+            }`}
+          >
+            Impact
           </Link>
         </nav>
 
@@ -158,10 +141,10 @@ export default function Header() {
           </div>
 
           <Link
-            href="/courses"
+            href="/login"
             className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 rounded-full hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition"
           >
-            Commencer
+            Se Connecter
           </Link>
         </div>
 
@@ -228,17 +211,19 @@ export default function Header() {
 
                 {isCoursesDropdownOpen && (
                   <div className="pl-4 mt-2 space-y-2">
-                    <Link href="/courses/bac" className="block">
+                    <Link href="/cours/bac" className="block">
                       Préparation BAC
                     </Link>
-                    <Link href="/courses/langues" className="block">
+                    <Link href="/cours/langues" className="block">
                       Cours de langues
                     </Link>
                   </div>
                 )}
               </div>
 
-              <Link href="/events">Événements</Link>
+              <Link href="/caracteristiques">Caractéristiques</Link>
+              <Link href="/fonctionnement">Fonctionnement</Link>
+              <Link href="/impact">Impact</Link>
 
               <div className="border-t pt-4">
                 <p className="text-sm text-gray-500">Langue</p>
@@ -261,10 +246,10 @@ export default function Header() {
               </div>
 
               <Link
-                href="/courses"
+                href="/login"
                 className="bg-blue-500 text-white px-6 py-2 rounded-full text-center mt-4"
               >
-                Commencer
+                Se Connecter
               </Link>
             </nav>
           </div>
@@ -273,3 +258,4 @@ export default function Header() {
     </header>
   );
 }
+
