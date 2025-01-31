@@ -24,7 +24,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in-up">
             Apprendre Aujourd&apos;hui,
             <br />
-            <span className="text-blue-400">Diriger Demain</span>
+            <span className="bg-gradient-to-r from-violet-600 to-blue-400 bg-clip-text text-transparent">Diriger Demain</span>
           </h1>
           
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90 animate-fade-in-up delay-100">
@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="animate-fade-in-up delay-200">
             <Link
               href="/courses"
-              className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg md:text-xl transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-4 rounded-full text-lg md:text-xl transition-all duration-300 hover:scale-105"
             >
               Commencer Maintenant
               <svg

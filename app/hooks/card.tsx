@@ -1,12 +1,15 @@
-import { ReactNode } from "react";
+import { ReactNode, HTMLAttributes } from "react";
 
-type Props = {
+type Props = HTMLAttributes<HTMLDivElement> & {
   children: ReactNode;
 };
 
-const Card: React.FC<Props> = ({ children }) => {
+const Card: React.FC<Props> = ({ children, className, ...props }) => {
   return (
-    <div className="card bg-white rounded-lg shadow-md overflow-hidden text-center">
+    <div
+      className={`card text-gray-600 bg-white rounded-lg shadow-md overflow-hidden text-center ${className}`}
+      {...props}
+    >
       <div className="px-6 py-4">
         {children}
       </div>
@@ -15,3 +18,4 @@ const Card: React.FC<Props> = ({ children }) => {
 };
 
 export default Card;
+

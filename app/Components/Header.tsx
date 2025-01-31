@@ -38,7 +38,7 @@ export default function Header() {
         {/* Logo avec image */}
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/logo-abd.png" // Remplacez par le chemin réel de votre logo
+            src="/img/logo.png"
             alt="abd.org logo"
             width={40}
             height={40}
@@ -159,7 +159,7 @@ export default function Header() {
 
           <Link
             href="/courses"
-            className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition"
+            className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 rounded-full hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition"
           >
             Commencer
           </Link>
