@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "abd.org | Home",
-  description: "abd.org | Home",
+  description: "abd.org | Home, abd.org is a plateform which help Malagasy students for their studing",
+  name: "This website with partenariat with such of organisation in Madagascar",
 };
 
 export default function RootLayout({

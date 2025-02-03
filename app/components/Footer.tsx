@@ -15,57 +15,57 @@ export default function Footer() {
               Madagascar
             </p>
             <p>
-              <strong>Phone:</strong> +261 (0) 384702532
+              <strong>Téléphone:</strong> +261 (0) 384702532
               <br />
-              <strong>Email:</strong> hello@abd.org
+              <strong>Email:</strong> bonjour@abd.org
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4">Useful Links</h3>
+            <h3 className="text-xl font-semibold mb-4">Liens utiles</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="hover:text-gray-300">
-                  Home
+                  Accueil
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-gray-300">
-                  About us
+                <Link href="/à-propos" className="hover:text-gray-300">
+                  À propos
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-gray-300">
-                  Services
+                  Nos services
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="hover:text-gray-300">
-                  Terms of service
+                <Link href="/conditions-dutilisation" className="hover:text-gray-300">
+                  Conditions d&apos;utilisation
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="hover:text-gray-300">
-                  Privacy policy
+                <Link href="/politique-de-confidentialité" className="hover:text-gray-300">
+                  Politique de confidentialité
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4">Our Services</h3>
+            <h3 className="text-xl font-semibold mb-4">Nos services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services/web-design" className="hover:text-gray-300">
-                  Web Design
+                <Link href="/services/conception-de-site-web" className="hover:text-gray-300">
+                  Conception de site web
                 </Link>
               </li>
               <li>
-                <Link href="/services/web-development" className="hover:text-gray-300">
-                  Web Development
+                <Link href="/services/développement-web" className="hover:text-gray-300">
+                  Développement web
                 </Link>
               </li>
               <li>
-                <Link href="/services/product-management" className="hover:text-gray-300">
-                  Product Management
+                <Link href="/services/gestion-de-produit" className="hover:text-gray-300">
+                  Gestion de produit
                 </Link>
               </li>
               <li>
@@ -74,36 +74,36 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services/graphic-design" className="hover:text-gray-300">
-                  Graphic Design
+                <Link href="/services/design-graphique" className="hover:text-gray-300">
+                  Design graphique
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4">Our Newsletter</h3>
+            <h3 className="text-xl font-semibold mb-4">Notre newsletter</h3>
             <p className="mb-4">
-              Subscribe to our newsletter and receive the latest news about our products and services!
+              Inscrivez-vous à notre newsletter et recevez les dernières nouvelles sur nos produits et services!
             </p>
             <form className="flex">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Entrez votre email"
                 className="px-4 py-2 w-full rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               <button
                 type="submit"
                 className="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
               >
-                Subscribe
+                S&apos;inscrire
               </button>
             </form>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-          <p>&copy; {new Date().getFullYear()} Mentor. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mentor. Tous droits réservés.</p>
           <p className="mt-2">
-            Designed by{" "}
+            Conçu par{" "}
             <a href="https://oeka.vercel.app/" className="text-blue-400 hover:text-blue-300">
               OEKA
             </a>
